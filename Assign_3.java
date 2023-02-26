@@ -62,7 +62,7 @@ class Assign{
     void collect(){
         sc.nextLine();
         System.out.println("View the total Amount collected for today");
-        System.out.print("Enter date: DD-MM-YYYY");
+        System.out.print("Enter date: DD-MMM-YY");
         String s=sc.nextLine();
         Double collect=0.0;
         for(int i=0;i<(str2.size());i++){
@@ -157,7 +157,7 @@ class Assign{
             if(ch1=='y'){
                 String s=",";
                 LocalDate date1= LocalDate.now();
-                DateTimeFormatter obj22=DateTimeFormatter.ofPattern("DD-MM-YYYY");
+                DateTimeFormatter obj22=DateTimeFormatter.ofPattern("DD-MMM-YY");
                 String date=date1.format(obj22);
                 int x=str2.size()+1;
                 String a=x+s+date+s+total+.00+s;
@@ -189,10 +189,10 @@ class Assign{
 }
 public class Assign_3 {
  public static void main(String[] args) {
-    Assign obj=new Assign();
-    obj.read();
-    obj.menulst();
-    obj.details();  
+    Assign ass=new Assign();
+    ass.read();
+    ass.menulst();
+    ass.details();  
     
  }   
 }
